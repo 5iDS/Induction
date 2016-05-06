@@ -1,0 +1,85 @@
+								
+								<br />
+								<form id="formLogin" class="prForm" enctype="multipart/form-data" method="post" novalidate="novalidate" data-ng-submit="login()">
+									
+									<div id="formInputs" class="inner-me tc" style="width:60%;margin:0 auto;">
+										
+										<div 
+											class="alert alert-block macdaddy-rounded LightFontFace"
+											data-ng-cloak
+											data-ng-class="{ 'alert-info': formError == false, 'alert-error': formError == true}" 
+											data-ng-show="formFeedBack">
+												<p class="statusMsg tc" style="margin:0 auto;background:none;border:none;color:#333;font-size:1em;padding:1em;" data-ng-model="formMsg">{{formMsg}}</p>
+										</div>
+										
+										<br />
+										<div data-ng-switch on="inductionType">
+
+											<div class="form-stuff grid tc" data-ng-switch-when="visitor">									
+
+												<div class="login-input-group tc" style="width:100%;margin-bottom:3em;display:inline-block;">
+													<input 
+														type="text" name="firstName" 
+														data-ng-model="user.firstName" required="required" 
+														placeholder="Name" class="first-child" />
+													<input 
+														type="text" name="lastName" 
+														data-ng-model="user.lastName" required="required" 
+														placeholder="Surname" class="middle-child fragment fade-in" data-voice="./voice-over/credentials/03_surname.ogg" />
+													<input 
+														type="text" name="idNumber" 
+														data-ng-model="user.idNumber" required="required" 
+														placeholder="I.D Number" class="middle-child fragment fade-in" data-voice="./voice-over/credentials/03_idNumber.ogg" />
+													<input 
+														type="text" name="companyName" 
+														data-ng-model="user.companyName" required="required" 
+														placeholder="Company" class="last-child fragment fade-in" data-voice="./voice-over/credentials/03_companyName.ogg" />
+												</div>
+
+												<input 
+													type="submit" 
+													value="Continue" name="login"
+													style="font-size: 1em;margin: 2em 10em;"
+													data-ng-disabled="formLogin.$invalid"
+													class="btn-block btn-large btn btn-success FiraFont menu-trigger uppercase" />
+
+												<!-- -->
+
+											</div>
+
+											<div class="form-stuff grid tc" data-ng-switch-when="employee">
+
+												<div class="login-input-group tc" style="width:100%;margin-bottom:3em;display:inline-block;">
+													
+													<!--
+													<input 
+														type="text" name="employeeNumber" 
+														data-ng-model="user.employeeNumber" required="required" 
+														placeholder="Employee Number" class="first-child" /> 
+													-->
+													
+													<input 
+														type="text" name="idNumber" class="macdaddy-rounded"
+														data-ng-model="user.idNumber" required="required" 
+														placeholder="ID Number" />
+												
+												</div>
+
+												<input 
+													type="submit" 
+													value="Continue" name="login"
+													style="font-size: 1em;margin: 2em 10em;"
+													data-ng-disabled="formLogin.$invalid"
+													class="btn-block btn-large btn btn-success FiraFont menu-trigger uppercase" />
+												<!-- -->
+
+											</div>
+
+										</div>
+
+										<div data-ng-transclude></div>
+
+										<input type="text" id="veryNB" name="veryNB" class="hidden" value="" />
+
+									</div>
+								</form>

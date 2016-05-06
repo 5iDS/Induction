@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Phola Coal Processing Plant - HSE Induction Programme</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="public/styles/normalize.css">
+		<link rel="stylesheet" href="public/styles/fonts.css">
+		<link rel="stylesheet" href="public/styles/bootstrap.min.css">
+		<!--
+		<link rel="stylesheet" href="public/styles/animate.min.css">
+		-->
+		<link rel="stylesheet" href="public/styles/gridlex.min.css">
+		<link rel="stylesheet" href="public/styles/reveal.css">
+		<link rel="stylesheet" href="public/styles/main.css">
+		<!-- Warn about failed cross origin requests in Chrome  -->
+    	<script defer type="application/javascript" src="xorigin.js"></script>
+    	<style type="text/css">
+			/* <![CDATA[ */
+				[ng-cloak], [data-ng-cloak]{ display: none !important; visibility: hidden; }
+			/* ]]> */
+		</style>
+	</head>
+	<body class="page ui-fontSize-default ui-lang-en singular one-column Fullwidth genesis" data-ng-controller="dashboardController">
+			
+			<div data-ng-switch on="renderPath[ 0 ]">
+				
+				<div data-ng-switch-default>
+					
+					<div class="phola-main-logo"></div>
+
+				</div>
+
+				<div  
+					data-ng-cloak
+					data-ng-switch-when="login"
+					class="help-tutorial full-rounded uppercase fr" >
+						<a href="javascript:;" id="induction-refresh" data-ng-click="goRefresh()" title="Refresh Window">
+							<span class="icon-spinner"></span>
+						</a>
+				</div>
+
+			</div>
+			<div data-ng-switch on="renderPath[ 1 ]">
+
+				<div  
+					data-ng-cloak
+					data-ng-switch-default
+					class="help-tutorial full-rounded uppercase fr" >
+						<a href="javascript:;" id="induction-refresh" data-ng-click="goRefresh()" title="Refresh Window">
+							<span class="icon-spinner"></span>
+						</a>
+				</div>
+
+			</div>
+
+			<!-- [MAIN SECTION] -->
+			<section id="page" class="row" data-role="main">
+
+				<div id="pamela-dashboard" class="anim8 columns sixteen container dashboard clearfix">
+
+					<div class="spinner" role="presentation"><br /><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div><br /><br /></div>
+
+					<div class="grid fill-container">
+
+						<div data-ng-view></div>
+							
+						<div class="col-12 fill-container main-content" data-ng-switch on="renderPath[ 0 ]">
+							
+							<!-- PROGRAMME -->
+							<div data-ng-cloak class="anim8-page main fill-container" data-ng-switch-when="start">
+								
+								<div class="fill-container" data-ng-switch on="renderPath[ 1 ]">
+
+									<div class="anim8-page fill-container programme-page" data-ng-switch-when="visitor">
+											
+										<div class="fill-container" data-ng-switch on="renderPath[ 2 ]">
+
+											<div class="programme-page-test fill-container" data-ng-switch-when="test">
+
+												<div class="fill-container" data-ui-programme-visitor-test></div>
+
+											</div>
+
+											<div class="programme-page fill-container" data-ng-switch-default>
+
+												<div class="fill-container" data-ui-programme-visitor></div>
+
+											</div>
+
+										</div>
+
+									</div>
+
+									<div class="anim8-page fill-container programme-page" data-ng-switch-when="employee">
+
+										<div class="fill-container" data-ng-switch on="renderPath[ 2 ]">
+
+												<div class="anim8-page programme-page-test fill-container" data-ng-switch-when="test">
+
+													<div class="fill-container" data-ui-programme-employee-test></div>
+
+												</div>
+
+												<div class="anim8-page programme-page fill-container" data-ng-switch-default>
+
+													<div class="fill-container" data-ui-programme-employee></div>
+
+												</div>
+
+										</div>
+
+									</div>
+									
+									<div class="anim8-page programme-page" data-ng-switch-default>
+
+										<div data-ui-form-login></div>
+
+									</div>
+
+								</div>
+
+							</div>
+							
+							<!-- INDEX -->
+							<div data-ng-cloak class="anim8-page fill-container page-login" data-ng-switch-when="login">
+
+								<div class="container body">
+									
+									<div class="row tile-content">									
+
+										<div class="columns sixteen" data-ui-form-induction></div>						
+
+									</div>						
+								</div>
+
+							</div>
+
+							<!-- SPLASH -->
+							<div class="anim8-page" data-ng-switch-when="splash">
+								<div id="pagetransition" class="loading tc" role="presentation">
+									<br /><br />
+									<div class="spinner" style="display:block;"><br /><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div><br /><br /></div>
+								</div>
+							
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+			<!-- [/MAIN SECTION] -->
+
+		<script type="text/ng-template" id="aboutHSE">
+						
+			<div class="row">
+				<div class="columns sixteen">
+					<div data-ui-modal-about></div>
+				</div>
+			</div>
+
+		</script>
+
+		<script async id="htmlContent/tour.tpl.html" type="text/ng-template">
+			<div class="tour-tip">
+				<span class="tour-arrow tt-{{ placement }}"></span>
+				<div class="tour-content-wrapper">
+					<p ng-bind="content"></p>
+					<a ng-click="nextAction()" ng-bind="nextLabel" class="small btn btn-large btn-info FiraFont tour-next-tip"></a>
+					<a ng-click="closeAction()" class="tour-close-tip">�</a>
+				</div>
+			</div>  
+		
+		</script>
+
+		<!-- build:js scripts/main.js -->
+		<script async data-main="init" src="production/require.min.js"></script>
+		<!-- endbuild -->
+
+	</body>
+</html>

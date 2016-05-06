@@ -1,0 +1,17 @@
+﻿/* TEAM */
+
+	Developer:			5ive Design Studio
+	UX:					S. Sibande
+	Site: 				www.5ivedesign.co.za
+	Location: 			the edge of Creation
+	
+
+/*THANKS*/
+
+	Image(s):			www.subtlepatterns.com
+	Icons:				icomoon.io
+
+/* SITE */
+
+	Last updated:		28/04/2016
+	Components: 		CEF3, Brackets-shell, Node.js, RequireJS, Angular.JS
