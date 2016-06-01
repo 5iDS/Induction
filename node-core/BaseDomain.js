@@ -42,7 +42,16 @@
 		mkdirp 				= require('./thirdparty/node-mkdirp'),
 		es 					= require('./thirdparty/event-stream'),
 		Service 			= require('./thirdparty/node-windows').Service,
-		autoupdater 		= require('./thirdparty/auto-updater/auto-updater.js');
+		AutoUpdater 		= require('./thirdparty/auto-updater');
+
+	/** /
+	var autoupdater = require('./thirdparty/auto-updater/auto-updater.js')({
+		pathToJson	: '',
+		async 		: true,
+		silent 		: false,
+		autoupdate 	: false,
+		check_git 	: true
+	});/**/
 
     /**
      * @private
@@ -75,7 +84,7 @@
 			user     			: _SQL_user,
 			password 			: _SQL_pword,
 			database 			: _SQL_dbname,
-			debug 				: true,
+			debug 				: false,
 			multipleStatements 	: true,
 			insecureAuth 		: true
 			//stringifyObjects	: true
@@ -511,7 +520,7 @@
 	 * 
 	 * Return Mac Address of the current machine
 	 */
-	function cmdCheckForUpdates( callback ) {
+	function cmdCheckForUpdates( ws, callback ) {
 
 		//console.log( "[HSE-Node] checking for updates");
 
@@ -530,23 +539,44 @@
 			silent: false,
 			autoupdate: false,
 			check_git: true
-		};/** /
+		};/**/
+
+		// Start checking 
+		//autoupdater.forceCheck();
+   		//autoupdater.fire('check');
+
+   		var autoupdater = new AutoUpdater({
+				pathToJson			: './thirdparty/package.json',
+				autoupdate 			: false,
+				checkgit 			: true,
+				jsonhost 			: '',
+				contenthost			: '',
+				progressDebounce 	: 0,
+				devmode 			: false
+		});
+
+		autoupdater.fire('check');
 
 		// State the events 
 		autoupdater.on( 'git-clone', function() {
-			console.log("You have a clone of the repository. Use 'git pull' to be up-to-date");
+			//console.log("You have a clone of the repository. Use 'git pull' to be up-to-date");
+			callback( false, "You have a clone of the repository. Use 'git pull' to be up-to-date");
 		});
 
-		autoupdater.on( 'check-up-to-date', function(v) {
+		autoupdater.on( 'check.up-to-date', function(v) {
 			console.log("You have the latest version: " + v);
+
+			callback( false, "You have the latest version: " + v);
 		});
 
-		autoupdater.on( 'check-out-dated', function(v_old , v) {
+		autoupdater.on( 'check.out-dated', function(v_old , v) {
 			console.log("Your version is outdated. "+v_old+ " of "+v);
 			//autoupdater.forceDownloadUpdate(); // If autoupdate: false, you'll have to do this manually. 
 			// Maybe ask if the'd like to download the update. 
+			callback( "Your version is outdated. "+v_old+ " of "+v );
 		});
-
+		
+		/** /
 		autoupdater.on( 'update-downloaded', function() {
 			console.log("Update downloaded and ready for install");
 			//autoupdater.forceExtract(); // If autoupdate: false, you'll have to do this manually. 
@@ -580,10 +610,8 @@
 
 		autoupdater.on( 'end', function() {
 			console.log("The app is ready to function");
-		});
+		});/**/
 
-		// Start checking 
-		autoupdater.forceCheck();
 		/**/
 	
 	}
@@ -965,10 +993,16 @@
 			"base", 										// domain name
 			"CheckForUpdates",								// command name
 			cmdCheckForUpdates,								// command handler function
-			false,											// this command is synchronous
+			true,											// this command is synchronous
 			"Returns Mac Address of the current machine",
 			[],             								// no parameters
-			[]												// no return @params
+			[
+				{
+					name: "callback",
+					type: "function",
+					description: "Default Repsonse"
+				}
+			]												// no return @params
 		);
 		_domainManager.registerCommand(
 			"base", 										// domain name

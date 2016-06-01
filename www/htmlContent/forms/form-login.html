@@ -26,10 +26,16 @@
 														type="text" name="lastName" 
 														data-ng-model="user.lastName" required="required" 
 														placeholder="Surname" class="middle-child fragment fade-in" data-voice="./voice-over/credentials/03_surname.ogg" />
-													<input 
-														type="text" name="idNumber" 
-														data-ng-model="user.idNumber" required="required" 
-														placeholder="I.D Number" class="middle-child fragment fade-in" data-voice="./voice-over/credentials/03_idNumber.ogg" />
+													<div class="form-group fragment fade-in" data-voice="./voice-over/credentials/03_idNumber.ogg">
+														<input 
+															type="text" name="idNumber" 
+															data-ng-model="user.idNumber"
+															placeholder="I.D Number" class="middle-child"  />
+														<input 
+															type="text" name="passportNumber" 
+															data-ng-model="user.passportNumber" 
+															placeholder="or Passport Number" class="middle-child" />
+													</div>
 													<input 
 														type="text" name="companyName" 
 														data-ng-model="user.companyName" required="required" 
@@ -43,25 +49,31 @@
 													data-ng-disabled="formLogin.$invalid"
 													class="btn-block btn-large btn btn-success FiraFont menu-trigger uppercase" />
 
-												<!-- -->
-
 											</div>
 
 											<div class="form-stuff grid tc" data-ng-switch-when="employee">
 
 												<div class="login-input-group tc" style="width:100%;margin-bottom:3em;display:inline-block;">
 													
+													<div class="form-group">
+														<input 
+															type="text" name="idNumber" 
+															data-ng-model="user.idNumber"
+															placeholder="I.D Number" style="border-radius:999px 0 0 999px;"  />
+														<input 
+															type="text" name="passportNumber" 
+															data-ng-model="user.passportNumber" 
+															placeholder="or Passport Number" style="border-radius:0 999px 999px 0;" />
+													</div>
 													<!--
 													<input 
 														type="text" name="employeeNumber" 
 														data-ng-model="user.employeeNumber" required="required" 
 														placeholder="Employee Number" class="first-child" /> 
-													-->
-													
 													<input 
 														type="text" name="idNumber" class="macdaddy-rounded"
 														data-ng-model="user.idNumber" required="required" 
-														placeholder="ID Number" />
+														placeholder="ID Number" /> -->
 												
 												</div>
 

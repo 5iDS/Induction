@@ -1,0 +1,657 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files (x86)\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '--global',
+1 verbose cli   'auto-updater' ]
+2 info using npm@2.14.12
+3 info using node@v4.2.6
+4 verbose install initial load of C:\Users\Max\AppData\Roaming\npm\package.json
+5 verbose readDependencies loading dependencies from C:\Users\Max\AppData\Roaming\npm\package.json
+6 silly cache add args [ 'auto-updater', null ]
+7 verbose cache add spec auto-updater
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'auto-updater',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'auto-updater',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed auto-updater@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for auto-updater
+11 info addNameTag [ 'auto-updater', 'latest' ]
+12 silly mapToRegistry name auto-updater
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/auto-updater
+16 verbose addNameTag registry:https://registry.npmjs.org/auto-updater not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/auto-updater
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 2:02:22 PM
+20 verbose request id 64377bf56b9a7327
+21 verbose etag "BABY1ISYI4VE7AA1GMKG5FOZU"
+22 http request GET https://registry.npmjs.org/auto-updater
+23 http 304 https://registry.npmjs.org/auto-updater
+24 verbose headers { date: 'Fri, 06 May 2016 12:02:19 GMT',
+24 verbose headers   via: '1.1 varnish',
+24 verbose headers   'cache-control': 'max-age=300',
+24 verbose headers   etag: '"BABY1ISYI4VE7AA1GMKG5FOZU"',
+24 verbose headers   age: '0',
+24 verbose headers   connection: 'keep-alive',
+24 verbose headers   'x-served-by': 'cache-ams4129-AMS',
+24 verbose headers   'x-cache': 'MISS',
+24 verbose headers   'x-cache-hits': '0',
+24 verbose headers   'x-timer': 'S1462536139.294676,VS0,VE468',
+24 verbose headers   vary: 'Accept-Encoding' }
+25 silly get cb [ 304,
+25 silly get   { date: 'Fri, 06 May 2016 12:02:19 GMT',
+25 silly get     via: '1.1 varnish',
+25 silly get     'cache-control': 'max-age=300',
+25 silly get     etag: '"BABY1ISYI4VE7AA1GMKG5FOZU"',
+25 silly get     age: '0',
+25 silly get     connection: 'keep-alive',
+25 silly get     'x-served-by': 'cache-ams4129-AMS',
+25 silly get     'x-cache': 'MISS',
+25 silly get     'x-cache-hits': '0',
+25 silly get     'x-timer': 'S1462536139.294676,VS0,VE468',
+25 silly get     vary: 'Accept-Encoding' } ]
+26 verbose etag https://registry.npmjs.org/auto-updater from cache
+27 verbose get saving auto-updater to C:\Users\Max\AppData\Roaming\npm-cache\registry.npmjs.org\auto-updater\.cache.json
+28 silly addNameTag next cb for auto-updater with tag latest
+29 silly addNamed auto-updater@1.0.2
+30 verbose addNamed "1.0.2" is a plain semver version for auto-updater
+31 silly cache afterAdd auto-updater@1.0.2
+32 verbose afterAdd C:\Users\Max\AppData\Roaming\npm-cache\auto-updater\1.0.2\package\package.json not in flight; writing
+33 verbose afterAdd C:\Users\Max\AppData\Roaming\npm-cache\auto-updater\1.0.2\package\package.json written
+34 silly install resolved [ { name: 'auto-updater',
+34 silly install resolved     description: 'Automatically updates your client version when is outdated by the repository',
+34 silly install resolved     version: '1.0.2',
+34 silly install resolved     author: { name: '@Juampi_92', url: 'https://github.com/juampi92' },
+34 silly install resolved     main: './auto-updater',
+34 silly install resolved     dependencies:
+34 silly install resolved      { 'adm-zip': '^0.4.7',
+34 silly install resolved        'node-promise': '^0.5.12',
+34 silly install resolved        underscore: '^1.8.3' },
+34 silly install resolved     keywords: [ 'auto-updater', 'automatic', 'auto', 'update', 'updater' ],
+34 silly install resolved     bugs: { url: 'https://github.com/juampi92/auto-updater/issues' },
+34 silly install resolved     repository:
+34 silly install resolved      { type: 'git',
+34 silly install resolved        url: 'git+https://github.com/juampi92/auto-updater.git' },
+34 silly install resolved     license: 'GPL-2.0',
+34 silly install resolved     engines: { node: '*' },
+34 silly install resolved     devDependencies: { mocha: '^2.2.5', should: '^7.0.4' },
+34 silly install resolved     scripts: { test: 'mocha --reporter spec test/*.js' },
+34 silly install resolved     'auto-updater': { repo: 'juampi92/auto-updater', branch: 'v1.0.0' },
+34 silly install resolved     gitHead: 'f5557985f8f9eb86c8e7b7aa279a4138301797de',
+34 silly install resolved     homepage: 'https://github.com/juampi92/auto-updater#readme',
+34 silly install resolved     _id: 'auto-updater@1.0.2',
+34 silly install resolved     _shasum: 'd3a43d76ecc3b6f9d0dc01259a42f5047ecd70c9',
+34 silly install resolved     _from: 'auto-updater@latest',
+34 silly install resolved     _npmVersion: '2.14.7',
+34 silly install resolved     _nodeVersion: '4.2.1',
+34 silly install resolved     _npmUser: { name: 'juampi92', email: 'juampi92@gmail.com' },
+34 silly install resolved     dist:
+34 silly install resolved      { shasum: 'd3a43d76ecc3b6f9d0dc01259a42f5047ecd70c9',
+34 silly install resolved        tarball: 'https://registry.npmjs.org/auto-updater/-/auto-updater-1.0.2.tgz' },
+34 silly install resolved     maintainers: [ [Object] ],
+34 silly install resolved     _npmOperationalInternal:
+34 silly install resolved      { host: 'packages-9-west.internal.npmjs.com',
+34 silly install resolved        tmp: 'tmp/auto-updater-1.0.2.tgz_1455397090829_0.7627480993978679' },
+34 silly install resolved     directories: {},
+34 silly install resolved     _resolved: 'https://registry.npmjs.org/auto-updater/-/auto-updater-1.0.2.tgz',
+34 silly install resolved     readme: 'ERROR: No README data found!' } ]
+35 info install auto-updater@1.0.2 into C:\Users\Max\AppData\Roaming\npm
+36 info installOne auto-updater@1.0.2
+37 verbose installOne of auto-updater to C:\Users\Max\AppData\Roaming\npm not in flight; installing
+38 verbose lock using C:\Users\Max\AppData\Roaming\npm-cache\_locks\auto-updater-ec1774d073f7d300.lock for C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater
+39 silly install write writing auto-updater 1.0.2 to C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater
+40 verbose unbuild node_modules\auto-updater
+41 info preuninstall auto-updater@1.0.2
+42 info uninstall auto-updater@1.0.2
+43 verbose unbuild rmStuff auto-updater@1.0.2 from C:\Users\Max\AppData\Roaming\npm\node_modules
+44 info postuninstall auto-updater@1.0.2
+45 silly gentlyRm C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater is being purged from base C:\Users\Max\AppData\Roaming\npm
+46 verbose gentlyRm don't care about contents; nuking C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater
+47 silly vacuum-fs purging C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater
+48 silly vacuum-fs quitting because other entries in C:\Users\Max\AppData\Roaming\npm\node_modules
+49 verbose tar unpack C:\Users\Max\AppData\Roaming\npm-cache\auto-updater\1.0.2\package.tgz
+50 verbose tar unpacking to C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater
+51 silly gentlyRm C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater is being purged
+52 verbose gentlyRm don't care about contents; nuking C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater
+53 silly gunzTarPerm modes [ '777', '666' ]
+54 silly gunzTarPerm extractEntry package.json
+55 silly gunzTarPerm extractEntry .npmignore
+56 silly gunzTarPerm extractEntry README.md
+57 silly gunzTarPerm extractEntry auto-updater.js
+58 silly gunzTarPerm extractEntry .travis.yml
+59 silly gunzTarPerm extractEntry test/diff-dependencies.test.js
+60 silly gunzTarPerm extractEntry test/eventEmitter.test.js
+61 silly gunzTarPerm extractEntry test/fire-commands.check.test.js
+62 silly gunzTarPerm extractEntry test/fire-commands.download.test.js
+63 silly gunzTarPerm extractEntry test/fire-commands.extract.test.js
+64 silly gunzTarPerm extractEntry test/init.test.js
+65 silly gunzTarPerm extractEntry test/assets/package.json
+66 silly gunzTarPerm extractEntry test/assets/older/package.json
+67 silly gunzTarPerm extractEntry test/assets/update-0.1.1_save
+68 verbose write writing to C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\package.json
+69 info preinstall auto-updater@1.0.2
+70 verbose readDependencies loading dependencies from C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\package.json
+71 silly prepareForInstallMany adding adm-zip@^0.4.7 from auto-updater dependencies
+72 silly prepareForInstallMany adding node-promise@^0.5.12 from auto-updater dependencies
+73 silly prepareForInstallMany adding underscore@^1.8.3 from auto-updater dependencies
+74 verbose readDependencies loading dependencies from C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\package.json
+75 silly cache add args [ 'adm-zip@^0.4.7', null ]
+76 verbose cache add spec adm-zip@^0.4.7
+77 silly cache add args [ 'node-promise@^0.5.12', null ]
+78 verbose cache add spec node-promise@^0.5.12
+79 silly cache add parsed spec Result {
+79 silly cache add   raw: 'adm-zip@^0.4.7',
+79 silly cache add   scope: null,
+79 silly cache add   name: 'adm-zip',
+79 silly cache add   rawSpec: '^0.4.7',
+79 silly cache add   spec: '>=0.4.7 <0.5.0',
+79 silly cache add   type: 'range' }
+80 silly addNamed adm-zip@>=0.4.7 <0.5.0
+81 verbose addNamed ">=0.4.7 <0.5.0" is a valid semver range for adm-zip
+82 silly addNameRange { name: 'adm-zip', range: '>=0.4.7 <0.5.0', hasData: false }
+83 silly mapToRegistry name adm-zip
+84 silly mapToRegistry using default registry
+85 silly mapToRegistry registry https://registry.npmjs.org/
+86 silly mapToRegistry uri https://registry.npmjs.org/adm-zip
+87 verbose addNameRange registry:https://registry.npmjs.org/adm-zip not in flight; fetching
+88 silly cache add parsed spec Result {
+88 silly cache add   raw: 'node-promise@^0.5.12',
+88 silly cache add   scope: null,
+88 silly cache add   name: 'node-promise',
+88 silly cache add   rawSpec: '^0.5.12',
+88 silly cache add   spec: '>=0.5.12 <0.6.0',
+88 silly cache add   type: 'range' }
+89 silly addNamed node-promise@>=0.5.12 <0.6.0
+90 verbose addNamed ">=0.5.12 <0.6.0" is a valid semver range for node-promise
+91 silly addNameRange { name: 'node-promise',
+91 silly addNameRange   range: '>=0.5.12 <0.6.0',
+91 silly addNameRange   hasData: false }
+92 silly mapToRegistry name node-promise
+93 silly mapToRegistry using default registry
+94 silly mapToRegistry registry https://registry.npmjs.org/
+95 silly mapToRegistry uri https://registry.npmjs.org/node-promise
+96 verbose addNameRange registry:https://registry.npmjs.org/node-promise not in flight; fetching
+97 silly cache add args [ 'underscore@^1.8.3', null ]
+98 verbose cache add spec underscore@^1.8.3
+99 silly cache add parsed spec Result {
+99 silly cache add   raw: 'underscore@^1.8.3',
+99 silly cache add   scope: null,
+99 silly cache add   name: 'underscore',
+99 silly cache add   rawSpec: '^1.8.3',
+99 silly cache add   spec: '>=1.8.3 <2.0.0',
+99 silly cache add   type: 'range' }
+100 silly addNamed underscore@>=1.8.3 <2.0.0
+101 verbose addNamed ">=1.8.3 <2.0.0" is a valid semver range for underscore
+102 silly addNameRange { name: 'underscore', range: '>=1.8.3 <2.0.0', hasData: false }
+103 silly mapToRegistry name underscore
+104 silly mapToRegistry using default registry
+105 silly mapToRegistry registry https://registry.npmjs.org/
+106 silly mapToRegistry uri https://registry.npmjs.org/underscore
+107 verbose addNameRange registry:https://registry.npmjs.org/underscore not in flight; fetching
+108 verbose request uri https://registry.npmjs.org/adm-zip
+109 verbose request no auth needed
+110 info attempt registry request try #1 at 2:02:24 PM
+111 verbose etag "2Q7VN0LGRPG7PYHBBRGF1M51C"
+112 http request GET https://registry.npmjs.org/adm-zip
+113 verbose request uri https://registry.npmjs.org/node-promise
+114 verbose request no auth needed
+115 info attempt registry request try #1 at 2:02:24 PM
+116 verbose etag "A1COIG5XZK086UTIR0IWAH9JF"
+117 http request GET https://registry.npmjs.org/node-promise
+118 verbose request uri https://registry.npmjs.org/underscore
+119 verbose request no auth needed
+120 info attempt registry request try #1 at 2:02:24 PM
+121 verbose etag "7TWD38J76AR63KU3BREEO7FRY"
+122 http request GET https://registry.npmjs.org/underscore
+123 http 200 https://registry.npmjs.org/node-promise
+124 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+124 verbose headers   etag: '"3SOZPIXH7E8CIYQR1HBGDFRFL"',
+124 verbose headers   'content-type': 'application/json',
+124 verbose headers   'content-encoding': 'gzip',
+124 verbose headers   'cache-control': 'max-age=300',
+124 verbose headers   'content-length': '4241',
+124 verbose headers   'accept-ranges': 'bytes',
+124 verbose headers   date: 'Fri, 06 May 2016 12:02:20 GMT',
+124 verbose headers   via: '1.1 varnish',
+124 verbose headers   age: '215',
+124 verbose headers   connection: 'keep-alive',
+124 verbose headers   'x-served-by': 'cache-ams4144-AMS',
+124 verbose headers   'x-cache': 'HIT',
+124 verbose headers   'x-cache-hits': '1',
+124 verbose headers   'x-timer': 'S1462536140.764136,VS0,VE0',
+124 verbose headers   vary: 'Accept-Encoding' }
+125 silly get cb [ 200,
+125 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+125 silly get     etag: '"3SOZPIXH7E8CIYQR1HBGDFRFL"',
+125 silly get     'content-type': 'application/json',
+125 silly get     'content-encoding': 'gzip',
+125 silly get     'cache-control': 'max-age=300',
+125 silly get     'content-length': '4241',
+125 silly get     'accept-ranges': 'bytes',
+125 silly get     date: 'Fri, 06 May 2016 12:02:20 GMT',
+125 silly get     via: '1.1 varnish',
+125 silly get     age: '215',
+125 silly get     connection: 'keep-alive',
+125 silly get     'x-served-by': 'cache-ams4144-AMS',
+125 silly get     'x-cache': 'HIT',
+125 silly get     'x-cache-hits': '1',
+125 silly get     'x-timer': 'S1462536140.764136,VS0,VE0',
+125 silly get     vary: 'Accept-Encoding' } ]
+126 verbose get saving node-promise to C:\Users\Max\AppData\Roaming\npm-cache\registry.npmjs.org\node-promise\.cache.json
+127 http 304 https://registry.npmjs.org/adm-zip
+128 verbose headers { date: 'Fri, 06 May 2016 12:02:20 GMT',
+128 verbose headers   via: '1.1 varnish',
+128 verbose headers   'cache-control': 'max-age=300',
+128 verbose headers   etag: '"2Q7VN0LGRPG7PYHBBRGF1M51C"',
+128 verbose headers   age: '0',
+128 verbose headers   connection: 'keep-alive',
+128 verbose headers   'x-served-by': 'cache-ams4126-AMS',
+128 verbose headers   'x-cache': 'HIT',
+128 verbose headers   'x-cache-hits': '1',
+128 verbose headers   'x-timer': 'S1462536140.718305,VS0,VE93',
+128 verbose headers   vary: 'Accept-Encoding' }
+129 silly get cb [ 304,
+129 silly get   { date: 'Fri, 06 May 2016 12:02:20 GMT',
+129 silly get     via: '1.1 varnish',
+129 silly get     'cache-control': 'max-age=300',
+129 silly get     etag: '"2Q7VN0LGRPG7PYHBBRGF1M51C"',
+129 silly get     age: '0',
+129 silly get     connection: 'keep-alive',
+129 silly get     'x-served-by': 'cache-ams4126-AMS',
+129 silly get     'x-cache': 'HIT',
+129 silly get     'x-cache-hits': '1',
+129 silly get     'x-timer': 'S1462536140.718305,VS0,VE93',
+129 silly get     vary: 'Accept-Encoding' } ]
+130 verbose etag https://registry.npmjs.org/adm-zip from cache
+131 verbose get saving adm-zip to C:\Users\Max\AppData\Roaming\npm-cache\registry.npmjs.org\adm-zip\.cache.json
+132 http 200 https://registry.npmjs.org/underscore
+133 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+133 verbose headers   etag: '"DRWKR4B9RW6TH5J70273EZB3Y"',
+133 verbose headers   'content-type': 'application/json',
+133 verbose headers   'content-encoding': 'gzip',
+133 verbose headers   'cache-control': 'max-age=300',
+133 verbose headers   'content-length': '7747',
+133 verbose headers   'accept-ranges': 'bytes',
+133 verbose headers   date: 'Fri, 06 May 2016 12:02:20 GMT',
+133 verbose headers   via: '1.1 varnish',
+133 verbose headers   age: '228',
+133 verbose headers   connection: 'keep-alive',
+133 verbose headers   'x-served-by': 'cache-ams4123-AMS',
+133 verbose headers   'x-cache': 'HIT',
+133 verbose headers   'x-cache-hits': '40',
+133 verbose headers   'x-timer': 'S1462536140.776968,VS0,VE0',
+133 verbose headers   vary: 'Accept-Encoding' }
+134 silly get cb [ 200,
+134 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+134 silly get     etag: '"DRWKR4B9RW6TH5J70273EZB3Y"',
+134 silly get     'content-type': 'application/json',
+134 silly get     'content-encoding': 'gzip',
+134 silly get     'cache-control': 'max-age=300',
+134 silly get     'content-length': '7747',
+134 silly get     'accept-ranges': 'bytes',
+134 silly get     date: 'Fri, 06 May 2016 12:02:20 GMT',
+134 silly get     via: '1.1 varnish',
+134 silly get     age: '228',
+134 silly get     connection: 'keep-alive',
+134 silly get     'x-served-by': 'cache-ams4123-AMS',
+134 silly get     'x-cache': 'HIT',
+134 silly get     'x-cache-hits': '40',
+134 silly get     'x-timer': 'S1462536140.776968,VS0,VE0',
+134 silly get     vary: 'Accept-Encoding' } ]
+135 verbose get saving underscore to C:\Users\Max\AppData\Roaming\npm-cache\registry.npmjs.org\underscore\.cache.json
+136 silly addNameRange number 2 { name: 'node-promise', range: '>=0.5.12 <0.6.0', hasData: true }
+137 silly addNameRange versions [ 'node-promise',
+137 silly addNameRange   [ '0.5.1-unstable-2',
+137 silly addNameRange     '0.5.1',
+137 silly addNameRange     '0.5.2',
+137 silly addNameRange     '0.5.3',
+137 silly addNameRange     '0.5.4',
+137 silly addNameRange     '0.5.5',
+137 silly addNameRange     '0.5.6',
+137 silly addNameRange     '0.5.7',
+137 silly addNameRange     '0.5.8',
+137 silly addNameRange     '0.5.9',
+137 silly addNameRange     '0.5.10',
+137 silly addNameRange     '0.5.11',
+137 silly addNameRange     '0.5.12' ] ]
+138 silly addNamed node-promise@0.5.12
+139 verbose addNamed "0.5.12" is a plain semver version for node-promise
+140 silly addNameRange number 2 { name: 'adm-zip', range: '>=0.4.7 <0.5.0', hasData: true }
+141 silly addNameRange versions [ 'adm-zip',
+141 silly addNameRange   [ '0.1.1',
+141 silly addNameRange     '0.1.2',
+141 silly addNameRange     '0.1.3',
+141 silly addNameRange     '0.1.4',
+141 silly addNameRange     '0.1.5',
+141 silly addNameRange     '0.1.6',
+141 silly addNameRange     '0.1.7',
+141 silly addNameRange     '0.1.8',
+141 silly addNameRange     '0.1.9',
+141 silly addNameRange     '0.2.0',
+141 silly addNameRange     '0.2.1',
+141 silly addNameRange     '0.4.3',
+141 silly addNameRange     '0.4.4',
+141 silly addNameRange     '0.4.5',
+141 silly addNameRange     '0.4.6',
+141 silly addNameRange     '0.4.7' ] ]
+142 silly addNamed adm-zip@0.4.7
+143 verbose addNamed "0.4.7" is a plain semver version for adm-zip
+144 silly addNameRange number 2 { name: 'underscore', range: '>=1.8.3 <2.0.0', hasData: true }
+145 silly addNameRange versions [ 'underscore',
+145 silly addNameRange   [ '1.0.3',
+145 silly addNameRange     '1.0.4',
+145 silly addNameRange     '1.1.0',
+145 silly addNameRange     '1.1.1',
+145 silly addNameRange     '1.1.2',
+145 silly addNameRange     '1.1.3',
+145 silly addNameRange     '1.1.4',
+145 silly addNameRange     '1.1.5',
+145 silly addNameRange     '1.1.6',
+145 silly addNameRange     '1.1.7',
+145 silly addNameRange     '1.2.0',
+145 silly addNameRange     '1.2.1',
+145 silly addNameRange     '1.2.2',
+145 silly addNameRange     '1.2.3',
+145 silly addNameRange     '1.2.4',
+145 silly addNameRange     '1.3.0',
+145 silly addNameRange     '1.3.1',
+145 silly addNameRange     '1.3.2',
+145 silly addNameRange     '1.3.3',
+145 silly addNameRange     '1.4.0',
+145 silly addNameRange     '1.4.1',
+145 silly addNameRange     '1.4.2',
+145 silly addNameRange     '1.4.3',
+145 silly addNameRange     '1.4.4',
+145 silly addNameRange     '1.5.0',
+145 silly addNameRange     '1.5.1',
+145 silly addNameRange     '1.5.2',
+145 silly addNameRange     '1.6.0',
+145 silly addNameRange     '1.7.0',
+145 silly addNameRange     '1.8.0',
+145 silly addNameRange     '1.8.1',
+145 silly addNameRange     '1.8.2',
+145 silly addNameRange     '1.8.3' ] ]
+146 silly addNamed underscore@1.8.3
+147 verbose addNamed "1.8.3" is a plain semver version for underscore
+148 silly cache afterAdd node-promise@0.5.12
+149 verbose afterAdd C:\Users\Max\AppData\Roaming\npm-cache\node-promise\0.5.12\package\package.json not in flight; writing
+150 verbose afterAdd C:\Users\Max\AppData\Roaming\npm-cache\node-promise\0.5.12\package\package.json written
+151 silly cache afterAdd underscore@1.8.3
+152 verbose afterAdd C:\Users\Max\AppData\Roaming\npm-cache\underscore\1.8.3\package\package.json not in flight; writing
+153 verbose afterAdd C:\Users\Max\AppData\Roaming\npm-cache\underscore\1.8.3\package\package.json written
+154 silly cache afterAdd adm-zip@0.4.7
+155 verbose afterAdd C:\Users\Max\AppData\Roaming\npm-cache\adm-zip\0.4.7\package\package.json not in flight; writing
+156 verbose afterAdd C:\Users\Max\AppData\Roaming\npm-cache\adm-zip\0.4.7\package\package.json written
+157 silly install resolved [ { name: 'node-promise',
+157 silly install resolved     description: 'Kris Zyp\'s implementation of promises with added features, maintained as an npm package.',
+157 silly install resolved     version: '0.5.12',
+157 silly install resolved     homepage: 'https://github.com/MaxMotovilov/node-promise',
+157 silly install resolved     files: [ 'package.json', 'promise.js', 'fs-promise.js' ],
+157 silly install resolved     main: 'promise.js',
+157 silly install resolved     repository:
+157 silly install resolved      { type: 'git',
+157 silly install resolved        url: 'git+https://MaxMotovilov@github.com/MaxMotovilov/node-promise.git' },
+157 silly install resolved     bugs: { url: 'https://github.com/MaxMotovilov/node-promise/issues' },
+157 silly install resolved     _id: 'node-promise@0.5.12',
+157 silly install resolved     dist:
+157 silly install resolved      { shasum: 'b0acf9bc2229a76407c077b926592f99b3b4e1f1',
+157 silly install resolved        tarball: 'https://registry.npmjs.org/node-promise/-/node-promise-0.5.12.tgz' },
+157 silly install resolved     _from: 'node-promise@>=0.5.12 <0.6.0',
+157 silly install resolved     _npmVersion: '1.3.24',
+157 silly install resolved     _npmUser: { name: '...max...', email: 'max@motovilov.com' },
+157 silly install resolved     maintainers: [ [Object] ],
+157 silly install resolved     directories: {},
+157 silly install resolved     _shasum: 'b0acf9bc2229a76407c077b926592f99b3b4e1f1',
+157 silly install resolved     _resolved: 'https://registry.npmjs.org/node-promise/-/node-promise-0.5.12.tgz',
+157 silly install resolved     readme: 'ERROR: No README data found!' },
+157 silly install resolved   { name: 'underscore',
+157 silly install resolved     description: 'JavaScript\'s functional programming helper library.',
+157 silly install resolved     homepage: 'http://underscorejs.org',
+157 silly install resolved     keywords: [ 'util', 'functional', 'server', 'client', 'browser' ],
+157 silly install resolved     author: { name: 'Jeremy Ashkenas', email: 'jeremy@documentcloud.org' },
+157 silly install resolved     repository:
+157 silly install resolved      { type: 'git',
+157 silly install resolved        url: 'git://github.com/jashkenas/underscore.git' },
+157 silly install resolved     main: 'underscore.js',
+157 silly install resolved     version: '1.8.3',
+157 silly install resolved     devDependencies:
+157 silly install resolved      { docco: '*',
+157 silly install resolved        eslint: '0.6.x',
+157 silly install resolved        karma: '~0.12.31',
+157 silly install resolved        'karma-qunit': '~0.1.4',
+157 silly install resolved        'qunit-cli': '~0.2.0',
+157 silly install resolved        'uglify-js': '2.4.x' },
+157 silly install resolved     scripts:
+157 silly install resolved      { test: 'npm run test-node && npm run lint',
+157 silly install resolved        lint: 'eslint underscore.js test/*.js',
+157 silly install resolved        'test-node': 'qunit-cli test/*.js',
+157 silly install resolved        'test-browser': 'npm i karma-phantomjs-launcher && ./node_modules/karma/bin/karma start',
+157 silly install resolved        build: 'uglifyjs underscore.js -c "evaluate=false" --comments "/    .*/" -m --source-map underscore-min.map -o underscore-min.js',
+157 silly install resolved        doc: 'docco underscore.js' },
+157 silly install resolved     license: 'MIT',
+157 silly install resolved     files:
+157 silly install resolved      [ 'underscore.js',
+157 silly install resolved        'underscore-min.js',
+157 silly install resolved        'underscore-min.map',
+157 silly install resolved        'LICENSE' ],
+157 silly install resolved     gitHead: 'e4743ab712b8ab42ad4ccb48b155034d02394e4d',
+157 silly install resolved     bugs: { url: 'https://github.com/jashkenas/underscore/issues' },
+157 silly install resolved     _id: 'underscore@1.8.3',
+157 silly install resolved     _shasum: '4f3fb53b106e6097fcf9cb4109f2a5e9bdfa5022',
+157 silly install resolved     _from: 'underscore@>=1.8.3 <2.0.0',
+157 silly install resolved     _npmVersion: '1.4.28',
+157 silly install resolved     _npmUser: { name: 'jashkenas', email: 'jashkenas@gmail.com' },
+157 silly install resolved     maintainers: [ [Object] ],
+157 silly install resolved     dist:
+157 silly install resolved      { shasum: '4f3fb53b106e6097fcf9cb4109f2a5e9bdfa5022',
+157 silly install resolved        tarball: 'http://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz' },
+157 silly install resolved     directories: {},
+157 silly install resolved     _resolved: 'https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz',
+157 silly install resolved     readme: 'ERROR: No README data found!' },
+157 silly install resolved   { name: 'adm-zip',
+157 silly install resolved     version: '0.4.7',
+157 silly install resolved     description: 'A Javascript implementation of zip for nodejs. Allows user to create or extract zip files both in memory or to/from disk',
+157 silly install resolved     keywords: [ 'zip', 'methods', 'archive', 'unzip' ],
+157 silly install resolved     homepage: 'http://github.com/cthackers/adm-zip',
+157 silly install resolved     author:
+157 silly install resolved      { name: 'Nasca Iacob',
+157 silly install resolved        email: 'sy@another-d-mention.ro',
+157 silly install resolved        url: 'https://github.com/cthackers' },
+157 silly install resolved     bugs:
+157 silly install resolved      { url: 'https://github.com/cthackers/adm-zip/issues',
+157 silly install resolved        email: 'sy@another-d-mention.ro' },
+157 silly install resolved     licenses: [ [Object] ],
+157 silly install resolved     files:
+157 silly install resolved      [ 'adm-zip.js',
+157 silly install resolved        'headers',
+157 silly install resolved        'methods',
+157 silly install resolved        'util',
+157 silly install resolved        'zipEntry.js',
+157 silly install resolved        'zipFile.js' ],
+157 silly install resolved     main: 'adm-zip.js',
+157 silly install resolved     repository:
+157 silly install resolved      { type: 'git',
+157 silly install resolved        url: 'git+https://github.com/cthackers/adm-zip.git' },
+157 silly install resolved     engines: { node: '>=0.3.0' },
+157 silly install resolved     gitHead: '6708a3e5788ff9e67ddba288397f7788a5c02855',
+157 silly install resolved     _id: 'adm-zip@0.4.7',
+157 silly install resolved     scripts: {},
+157 silly install resolved     _shasum: '8606c2cbf1c426ce8c8ec00174447fd49b6eafc1',
+157 silly install resolved     _from: 'adm-zip@>=0.4.7 <0.5.0',
+157 silly install resolved     _resolved: 'https://registry.npmjs.org/adm-zip/-/adm-zip-0.4.7.tgz',
+157 silly install resolved     _npmVersion: '2.5.1',
+157 silly install resolved     _nodeVersion: '0.12.0',
+157 silly install resolved     _npmUser: { name: 'cthackers', email: 'iacob.campia@gmail.com' },
+157 silly install resolved     maintainers: [ [Object] ],
+157 silly install resolved     dist:
+157 silly install resolved      { shasum: '8606c2cbf1c426ce8c8ec00174447fd49b6eafc1',
+157 silly install resolved        tarball: 'http://registry.npmjs.org/adm-zip/-/adm-zip-0.4.7.tgz' },
+157 silly install resolved     directories: {},
+157 silly install resolved     readme: 'ERROR: No README data found!' } ]
+158 info install node-promise@0.5.12 into C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater
+159 info install underscore@1.8.3 into C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater
+160 info install adm-zip@0.4.7 into C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater
+161 info installOne node-promise@0.5.12
+162 verbose installOne of node-promise to C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater not in flight; installing
+163 info installOne underscore@1.8.3
+164 verbose installOne of underscore to C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater not in flight; installing
+165 info installOne adm-zip@0.4.7
+166 verbose installOne of adm-zip to C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater not in flight; installing
+167 verbose lock using C:\Users\Max\AppData\Roaming\npm-cache\_locks\node-promise-ebe03b9eafa3a2ff.lock for C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\node-promise
+168 verbose lock using C:\Users\Max\AppData\Roaming\npm-cache\_locks\underscore-be3e3d7092eeec73.lock for C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\underscore
+169 silly install write writing node-promise 0.5.12 to C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\node-promise
+170 verbose lock using C:\Users\Max\AppData\Roaming\npm-cache\_locks\adm-zip-52e0d6f90f8c44c2.lock for C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\adm-zip
+171 silly install write writing underscore 1.8.3 to C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\underscore
+172 silly install write writing adm-zip 0.4.7 to C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\adm-zip
+173 verbose unbuild node_modules\auto-updater\node_modules\node-promise
+174 verbose unbuild node_modules\auto-updater\node_modules\underscore
+175 verbose unbuild node_modules\auto-updater\node_modules\adm-zip
+176 silly gentlyRm C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\node-promise is being purged from base C:\Users\Max\AppData\Roaming\npm
+177 verbose gentlyRm don't care about contents; nuking C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\node-promise
+178 silly gentlyRm C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\underscore is being purged from base C:\Users\Max\AppData\Roaming\npm
+179 verbose gentlyRm don't care about contents; nuking C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\underscore
+180 silly gentlyRm C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\adm-zip is being purged from base C:\Users\Max\AppData\Roaming\npm
+181 verbose gentlyRm don't care about contents; nuking C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\adm-zip
+182 verbose tar unpack C:\Users\Max\AppData\Roaming\npm-cache\node-promise\0.5.12\package.tgz
+183 verbose tar unpacking to C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\node-promise
+184 silly gentlyRm C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\node-promise is being purged
+185 verbose gentlyRm don't care about contents; nuking C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\node-promise
+186 verbose tar unpack C:\Users\Max\AppData\Roaming\npm-cache\underscore\1.8.3\package.tgz
+187 verbose tar unpacking to C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\underscore
+188 silly gentlyRm C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\underscore is being purged
+189 verbose gentlyRm don't care about contents; nuking C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\underscore
+190 verbose tar unpack C:\Users\Max\AppData\Roaming\npm-cache\adm-zip\0.4.7\package.tgz
+191 verbose tar unpacking to C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\adm-zip
+192 silly gentlyRm C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\adm-zip is being purged
+193 verbose gentlyRm don't care about contents; nuking C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\adm-zip
+194 silly gunzTarPerm modes [ '777', '666' ]
+195 silly gunzTarPerm modes [ '777', '666' ]
+196 silly gunzTarPerm modes [ '777', '666' ]
+197 silly gunzTarPerm extractEntry package.json
+198 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+199 silly gunzTarPerm extractEntry README.md
+200 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+201 silly gunzTarPerm extractEntry fs-promise.js
+202 silly gunzTarPerm modified mode [ 'fs-promise.js', 420, 438 ]
+203 silly gunzTarPerm extractEntry package.json
+204 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+205 silly gunzTarPerm extractEntry promise.js
+206 silly gunzTarPerm modified mode [ 'promise.js', 420, 438 ]
+207 silly gunzTarPerm extractEntry README.md
+208 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+209 silly gunzTarPerm extractEntry LICENSE
+210 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+211 silly gunzTarPerm extractEntry package.json
+212 silly gunzTarPerm extractEntry README.md
+213 silly gunzTarPerm extractEntry adm-zip.js
+214 silly gunzTarPerm extractEntry underscore.js
+215 silly gunzTarPerm modified mode [ 'underscore.js', 420, 438 ]
+216 silly gunzTarPerm extractEntry underscore-min.js
+217 silly gunzTarPerm modified mode [ 'underscore-min.js', 420, 438 ]
+218 silly gunzTarPerm extractEntry underscore-min.map
+219 silly gunzTarPerm modified mode [ 'underscore-min.map', 420, 438 ]
+220 silly gunzTarPerm extractEntry zipEntry.js
+221 silly gunzTarPerm extractEntry zipFile.js
+222 silly gunzTarPerm extractEntry headers/entryHeader.js
+223 silly gunzTarPerm extractEntry headers/index.js
+224 silly gunzTarPerm extractEntry headers/mainHeader.js
+225 silly gunzTarPerm extractEntry methods/deflater.js
+226 silly gunzTarPerm extractEntry methods/index.js
+227 verbose write writing to C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\node-promise\package.json
+228 silly gunzTarPerm extractEntry methods/inflater.js
+229 silly gunzTarPerm extractEntry util/constants.js
+230 info preinstall node-promise@0.5.12
+231 verbose readDependencies loading dependencies from C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\node-promise\package.json
+232 silly gunzTarPerm extractEntry util/errors.js
+233 silly gunzTarPerm extractEntry util/fattr.js
+234 verbose readDependencies loading dependencies from C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\node-promise\package.json
+235 silly install resolved []
+236 verbose about to build C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\node-promise
+237 info build C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\node-promise
+238 silly gunzTarPerm extractEntry util/index.js
+239 silly gunzTarPerm extractEntry util/utils.js
+240 info linkStuff node-promise@0.5.12
+241 silly linkStuff node-promise@0.5.12 has C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules as its parent node_modules
+242 silly linkStuff node-promise@0.5.12 is part of a global install
+243 silly linkStuff node-promise@0.5.12 is installed into a global node_modules
+244 verbose linkBins node-promise@0.5.12
+245 verbose linkMans node-promise@0.5.12
+246 verbose rebuildBundles node-promise@0.5.12
+247 info install node-promise@0.5.12
+248 info postinstall node-promise@0.5.12
+249 verbose write writing to C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\underscore\package.json
+250 verbose unlock done using C:\Users\Max\AppData\Roaming\npm-cache\_locks\node-promise-ebe03b9eafa3a2ff.lock for C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\node-promise
+251 info preinstall underscore@1.8.3
+252 verbose readDependencies loading dependencies from C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\underscore\package.json
+253 verbose readDependencies loading dependencies from C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\underscore\package.json
+254 silly install resolved []
+255 verbose about to build C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\underscore
+256 info build C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\underscore
+257 info linkStuff underscore@1.8.3
+258 silly linkStuff underscore@1.8.3 has C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules as its parent node_modules
+259 silly linkStuff underscore@1.8.3 is part of a global install
+260 silly linkStuff underscore@1.8.3 is installed into a global node_modules
+261 verbose linkBins underscore@1.8.3
+262 verbose linkMans underscore@1.8.3
+263 verbose rebuildBundles underscore@1.8.3
+264 info install underscore@1.8.3
+265 info postinstall underscore@1.8.3
+266 verbose unlock done using C:\Users\Max\AppData\Roaming\npm-cache\_locks\underscore-be3e3d7092eeec73.lock for C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\underscore
+267 verbose write writing to C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\adm-zip\package.json
+268 info preinstall adm-zip@0.4.7
+269 verbose readDependencies loading dependencies from C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\adm-zip\package.json
+270 verbose readDependencies loading dependencies from C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\adm-zip\package.json
+271 silly install resolved []
+272 verbose about to build C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\adm-zip
+273 info build C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\adm-zip
+274 info linkStuff adm-zip@0.4.7
+275 silly linkStuff adm-zip@0.4.7 has C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules as its parent node_modules
+276 silly linkStuff adm-zip@0.4.7 is part of a global install
+277 silly linkStuff adm-zip@0.4.7 is installed into a global node_modules
+278 verbose linkBins adm-zip@0.4.7
+279 verbose linkMans adm-zip@0.4.7
+280 verbose rebuildBundles adm-zip@0.4.7
+281 info install adm-zip@0.4.7
+282 info postinstall adm-zip@0.4.7
+283 verbose unlock done using C:\Users\Max\AppData\Roaming\npm-cache\_locks\adm-zip-52e0d6f90f8c44c2.lock for C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater\node_modules\adm-zip
+284 verbose about to build C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater
+285 info build C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater
+286 info linkStuff auto-updater@1.0.2
+287 silly linkStuff auto-updater@1.0.2 has C:\Users\Max\AppData\Roaming\npm\node_modules as its parent node_modules
+288 silly linkStuff auto-updater@1.0.2 is part of a global install
+289 silly linkStuff auto-updater@1.0.2 is installed into a global node_modules
+290 silly linkStuff auto-updater@1.0.2 is installed into the top-level global node_modules
+291 verbose linkBins auto-updater@1.0.2
+292 verbose linkMans auto-updater@1.0.2
+293 verbose rebuildBundles auto-updater@1.0.2
+294 verbose rebuildBundles [ 'adm-zip', 'node-promise', 'underscore' ]
+295 info install auto-updater@1.0.2
+296 info postinstall auto-updater@1.0.2
+297 verbose unlock done using C:\Users\Max\AppData\Roaming\npm-cache\_locks\auto-updater-ec1774d073f7d300.lock for C:\Users\Max\AppData\Roaming\npm\node_modules\auto-updater
+298 verbose validateInstall loading C:\Users\Max\AppData\Roaming\npm\package.json for validation
+299 verbose stack Error: The package generator-mocha@0.3.0 does not satisfy its siblings' peerDependencies requirements!
+299 verbose stack     at c:\Program Files (x86)\nodejs\node_modules\npm\lib\install.js:125:32
+299 verbose stack     at c:\Program Files (x86)\nodejs\node_modules\npm\lib\install.js:268:7
+299 verbose stack     at c:\Program Files (x86)\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:142:5
+299 verbose stack     at c:\Program Files (x86)\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+299 verbose stack     at cb (c:\Program Files (x86)\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+299 verbose stack     at c:\Program Files (x86)\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+299 verbose stack     at cb (c:\Program Files (x86)\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+299 verbose stack     at c:\Program Files (x86)\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+299 verbose stack     at cb (c:\Program Files (x86)\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+299 verbose stack     at c:\Program Files (x86)\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:263:14
+300 verbose cwd c:\eclipse_prjs\induction\www
+301 error Windows_NT 6.3.9600
+302 error argv "c:\\Program Files (x86)\\nodejs\\node.exe" "c:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "--global" "auto-updater"
+303 error node v4.2.6
+304 error npm  v2.14.12
+305 error code EPEERINVALID
+306 error peerinvalid The package generator-mocha@0.3.0 does not satisfy its siblings' peerDependencies requirements!
+306 error peerinvalid Peer generator-chromeapp@0.2.19 wants generator-mocha@>=0.1.6
+306 error peerinvalid Peer generator-ember@0.5.7 wants generator-mocha@~0.1.1
+307 verbose exit [ 1, true ]

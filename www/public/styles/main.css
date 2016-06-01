@@ -1148,6 +1148,11 @@ input[type="color"],
 			border-radius: 0 0 10px 10px;
 }
 
+.form-group input {
+	width: 50%;
+	float: left;
+	position: relative;
+}
 
 /*    FormInteractions
 /* ---------------------------- */
